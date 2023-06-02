@@ -22,23 +22,29 @@
         <label for="Re-type Password">Re-type Password:</label>
         <input type="password" id="retypepassword" name="retypepassword" placeholder="Re-type your password" required>
         
-        <label for="gender">Gender:</label>
-        <input type="radio" id="male" name="gender">
-        <label for="male">Male</label>
+        <label>Gender:</label>
+        <label for="male">
+            <input type="radio" id="male" name="gender" value="male"> Male
+        </label>
+        
+        <label for="female">
+            <input type="radio" id="male" name="gender" value="male"> Female
+        </label>
+        
 
-        <input type="radio" id="female" name="gender">
-        <label for="female">Female</label>
+        <label>Techie Skills:</label>
+        <label for="html">
+            <input type="checkbox" id="html" name="technical-skills[]" value="html"> HTML
+        </label>
 
-        <label for="Techie">Techie Skills:</label>
-        <input type="checkbox" id="html" value="html">
-        <label for="html">HTML</label>
+        <label for="css">
+            <input type="checkbox" id="css" name="technical-skills[]" value="css"> CSS
+        </label>
 
-        <input type="checkbox" id="css" value="css">
-        <label for="css">CSS</label>
-
-        <input type="checkbox" id="javascript" value="javascript">
-        <label for="javascript">JavaScript</label>
-
+        <label for="javascript">
+            <input type="checkbox" id="javascript" name="technical-skills[]" value="javascript"> JavaScript
+        </label>
+        
         <label for="Phone number">Phone Number:</label>
         <input type="tel" id="phone number" name="phone number" placeholder="Enter your phone number" required>
 
@@ -46,7 +52,7 @@
         <input type="email" id="email" name="email" placeholder="Enter your email address" required>
 
         <label for="college">College:</label>
-        <select name="college" id="college">
+        <select name="college" id="college" required>
             <option value="college">Select a college</option>
             <option value="college1">College1</option>
             <option value="college2">College2</option>
